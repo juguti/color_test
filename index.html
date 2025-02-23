@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Couleur - 2 Joueurs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Devinez la Couleur</h1>
+        <p id="word"></p>
+        
+        <div class="player">
+            <h2>Joueur 1</h2>
+            <input type="color" id="colorPicker1"class="color-btn">
+            <p id="result1">Score: 0</p>
+        </div>
+        
+        <div class="player">
+            <h2>Joueur 2</h2>
+            <input type="color" id="colorPicker2" class="color-btn" >
+            <p id="result2">Score: 0</p>
+        </div>
+        
+        <button id="validateButton" onclick="checkColor()">Valider</button>
+        
+        <div id="popup" class="popup" style="display: none;">
+            <div class="popup-content">
+                <h3>Couleur correcte :</h3>
+                <div id="colorContainer">
+                    <div id="colorDisplay" style="width: 100px; height: 100px; border: 1px solid #000;"></div>
+                    <img id="pixelArt" src="" alt="Pixel Art" class="pixel-art">
+                </div>
+                <button onclick="nextRound()">OK</button>
+            </div>
+        </div>
+        
+        <p id="winner"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
