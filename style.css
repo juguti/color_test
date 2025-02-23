@@ -72,48 +72,13 @@ button:hover {
     border: 1px solid black;
 }
 
-/* Style for the color selection button */
-.color-btn {
-    background-color: #4CAF50; /* Default background color */
-    color: white; /* Text color */
-    font-size: 16px;
-    padding: 12px 24px; /* Padding around the text */
-    border: none;
-    border-radius: 8px; /* Rounded corners */
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+.color-btn{
+    border: 0;
+  cursor: pointer;
+  height: 5em;
+  padding: 0;
+  width: 5em;
 }
 
-.color-btn:hover {
-    background-color: #45a049; /* Darker green on hover */
-    transform: scale(1.05); /* Slight zoom effect on hover */
-}
 
-.color-btn:focus {
-    outline: none; /* Remove the default outline */
-    box-shadow: 0 0 0 4px rgba(72, 167, 255, 0.6); /* Blue focus ring */
-}
 
-.color-btn:active {
-    background-color: #3e8e41; /* Even darker green on click */
-    transform: scale(0.98); /* Slight shrink effect on click */
-}
-
-/* Optional: Add a tooltip with color preview */
-.color-btn[title] {
-    position: relative;
-}
-
-.color-btn[title]:hover::after {
-    content: attr(title);
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    white-space: nowrap;
-}
