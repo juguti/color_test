@@ -121,7 +121,7 @@ function checkColor() {
 
     // Afficher la pop-up avec la bonne couleur et le pixel art
     document.getElementById("colorDisplay").style.backgroundColor = correctColor;
-    document.getElementById("pixelArt").src = "Pokemon/"+randomKey.toLowerCase()+".png"; // Assurez-vous que les images sont nommées comme les clés en minuscules
+    document.getElementById("pixelArt").src = "Pokemon/"+randomKey+".png"; // Assurez-vous que les images sont nommées comme les clés en minuscules
     document.getElementById("popup").style.display = "flex";
 
     // Désactiver les inputs et le bouton jusqu'au tour suivant
